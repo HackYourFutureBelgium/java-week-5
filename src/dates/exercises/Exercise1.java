@@ -1,7 +1,6 @@
 package dates.exercises;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 /**
  * Exercise 1: Basic Date and Time Operations
@@ -25,18 +24,9 @@ public class Exercise1 {
         
 
         // TODO: Task 3 - Check if leap year
-        
-        
-        // TODO: Task 4 - Create wake-up time
-        LocalTime wakeUpTime = null; // Replace with your usual wake-up time
-        
-        // TODO: Task 5 - Combine birthday and wake-up time
-
-        
-        // TODO: Task 6 - Calculate days old (Hint: use ChronoUnit.DAYS.between())
 
 
-        // TODO: Task 7 - Print day of year you were born
+        // TODO: Task 4 - Print day of year you were born
         
     }
 }
