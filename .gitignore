@@ -31,3 +31,5 @@ replay_pid*
 /.vscode/settings.json
 /.idea/vcs.xml
 /.idea/uiDesigner.xml
+/out
+/.idea

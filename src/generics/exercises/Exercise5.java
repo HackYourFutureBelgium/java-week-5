@@ -26,7 +26,7 @@ import java.util.List;
  * 
  * 6. Run all methods in main()
  */
-public class Exercise7 {
+public class Exercise5 {
     
     public static void main(String[] args) {
         System.out.println("=== Using Box Class ===\n");
