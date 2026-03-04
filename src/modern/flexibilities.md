@@ -71,6 +71,27 @@ Instead of creating a full class file, we can create it inline.
 Example
 
 ```java
+interface Printer {
+    void print();
+}
+
+```
+
+```java
+//We want to create a printer
+Printer p = new Printer() {
+    @Override
+    public void print(String text) {
+        System.out.println(text);
+    }
+};
+p.print("Hello");
+
+```
+
+It is also possible with generics too
+
+```java
 Comparator<String> comparator = new Comparator<>() {
     @Override
     public int compare(String a, String b) {
