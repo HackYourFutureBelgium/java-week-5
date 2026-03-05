@@ -164,9 +164,9 @@ Usage
 
 ```java
 User user = new User.Builder()
-.name("Bora")
-.age(35)
-.active(true)
+    .name("Student")
+    .age(35)
+    .active(true)
 .build();
 
 ```

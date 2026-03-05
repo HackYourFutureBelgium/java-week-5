@@ -18,7 +18,7 @@ Sealed classes restrict which classes are allowed to extend or implement a type.
 Normally, any class could extend a public class.
 With sealed classes, the parent class explicitly defines the allowed subclasses using the permits keyword.
 
-Permitted subclasses must declare one of the following:
+Permitted subclasses MUST declare one of the following:
 
 final → cannot be extended further
 
@@ -28,8 +28,47 @@ non-sealed → removes the restriction again
 
 This gives developers more control over inheritance hierarchies.
 
+---
 
+### Example: Traffic Light
 
+A traffic light can only have three possible states:
+
+- Red
+- Yellow
+- Green
+
+In normal Java inheritance, anyone could create a new subclass:
+
+```java
+abstract class TrafficLight {}
+
+class Red extends TrafficLight {}
+class Yellow extends TrafficLight {}
+class Green extends TrafficLight {}
+
+class Blue extends TrafficLight {} // This should not exist
+
+    // This is unrealistic because a real traffic light only has three valid states.
+    // With sealed classes, we can restrict which subclasses are allowed.
+
+public sealed class TrafficLight
+        permits Red, Yellow, Green {}
+
+public final class Red extends TrafficLight {}
+public final class Yellow extends TrafficLight {}
+public final class Green extends TrafficLight {}
+```
+    Now the hierarchy is fixed:
+
+        TrafficLight
+        ├ Red
+        ├ Yellow
+        └ Green
+
+        No other classes can extend TrafficLight.
+
+        This makes the model safer and more predictable.
 
 ---
 
