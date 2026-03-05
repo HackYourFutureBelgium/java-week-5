@@ -4,7 +4,7 @@
  * 3. Run the program and verify the file content.
  */
 
-package introduction.examples;
+package inputoutput1.examples;
 
 import java.io.File;
 import java.io.FileWriter;

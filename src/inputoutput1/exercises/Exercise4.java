@@ -7,9 +7,18 @@
  * 4. After writing, print "File written successfully!".
  */
 
-package introduction.exercises;
+package inputoutput1.exercises;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Exercise4
 {
+	public static void main(String[] args)
+	{
+		String filePath = "resources" + File.separator + "notes.txt";
+
+	}
 
 }

@@ -4,7 +4,7 @@
  * 3. If it doesn’t, print a message saying "File not found!".
  */
 
-package introduction.examples;
+package inputoutput1.examples;
 
 import java.io.File;
 

@@ -8,12 +8,16 @@
  * 4. If it doesn’t exist, print a message saying "File not found!".
  */
 
-package introduction.exercises;
+package inputoutput1.exercises;
+
+import java.io.File;
 
 public class Exercise1
 {
     public static void main(String[] args)
     {
+        File file = new File("resources" + File.separator + "info.txt");
+
 
     }
 }

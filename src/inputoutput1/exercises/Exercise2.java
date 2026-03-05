@@ -5,12 +5,16 @@
  * 4. After creation, print the file’s absolute path.
  */
 
-package introduction.exercises;
+package inputoutput1.exercises;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Exercise2
 {
     public static void main(String[] args)
     {
+        File file = new File("resources" + File.separator + "students.txt");
 
     }
 }

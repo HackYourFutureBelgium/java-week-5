@@ -4,7 +4,7 @@
  * 3. Print their names and indicate if they are files or directories.
  */
 
-package introduction.examples;
+package inputoutput1.examples;
 import java.io.File;
 
 public class Example3

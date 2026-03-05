@@ -6,12 +6,17 @@
  * 5. Handle IOException properly.
  */
 
-package introduction.exercises;
+package inputoutput1.exercises;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Exercise5
 {
     public static void main(String[] args)
     {
+        //try-with-resources can take more than one resource, just use ; between them
 
     }
 }

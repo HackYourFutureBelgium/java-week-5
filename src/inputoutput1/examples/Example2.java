@@ -4,7 +4,7 @@
  * 3. Print the absolute path.
  */
 
-package introduction.examples;
+package inputoutput1.examples;
 
 import java.io.File;
 import java.io.IOException;
