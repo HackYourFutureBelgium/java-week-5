@@ -8,15 +8,28 @@
 
 package inputoutput1.exercises;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class Exercise5
 {
     public static void main(String[] args)
     {
-        //try-with-resources can take more than one resource, just use ; between them
+        String source_path = STR."\{Config.getIntroPath()}\{File.separator}smiling_pit.jpg" ;
+        String copy_path = STR."\{Config.getIntroPath()}\{File.separator}smiling_pit_copy.jpg" ;
+        try(
+                FileInputStream in = new FileInputStream(source_path);
+                FileOutputStream out = new FileOutputStream(copy_path)){
+            int byteData;
+            while((byteData = in.read()) != -1){
+                out.write(byteData);
+            }
+
+
+            System.out.println("File copied successfully!");
+        }
+        catch (IOException e){
+            System.out.println("Error " + e.getMessage());
+        }
 
     }
 }

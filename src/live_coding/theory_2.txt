@@ -1,0 +1,33 @@
+// Theory 2 -- final and Immutability //
+        // What does the keyword final mean for:
+        //
+        //a variable?
+
+        // the value of a final variable could not be changed. It's imutable'.
+        // Variable
+        System.out.println("The assigned value of a final variable/field cannot be reassigned.");
+        final String name = "Sophie";
+        name = "Babar"; // Generate an error => java: cannot assign a value to final variable name
+
+
+        //
+        //a field?
+      //  same for a field
+      When a method is declared final, it means:
+     A subclass cannot override this method.
+
+
+        // a reference to an object?
+        A final object reference cannot change but it could be modified.
+        final List<String> names = new ArrayList<>();
+        names.add(name); // OK
+
+        // Explain the difference between final reference and immutable object.
+        The state of an immutable cannot change.
+        String name = "Sophie";
+        name += "Babar"; => create new Object;
+        An ArrayList is mutable => its content could be change
+        A final ArrayList's reference could not be changed.
+        final List<String> names = new ArrayList<>();
+        names = new ArrayList<>(); // raise an error => java: cannot assign a value to final variable names
+        An Integer is immutable => its content could not be changed.

@@ -10,6 +10,13 @@ public class Exercise1
 {
     public static void main(String[] args)
     {
-
+        System.out.println("Sum => " + sum(10,30,5,4,1));
+    }
+    public static int sum(int... numbers){
+        int result = 0;
+        for(int nb:numbers ){
+            result +=nb;
+        }
+        return result;
     }
 }

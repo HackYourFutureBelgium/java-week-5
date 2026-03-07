@@ -11,14 +11,28 @@
 package inputoutput1.exercises;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
 
 public class Exercise1
 {
     public static void main(String[] args)
     {
-        File file = new File("resources" + File.separator + "info.txt");
+        String path = Config.getIntroPath() + File.separator + "info.txt";
+        File file = new File(path);
 
+        if(file.exists()){
+            System.out.println("Absolute path: " + file.getAbsolutePath());
+            System.out.println("Size: " + file.length() + " bytes");
+            System.out.println("Is readable: " +file.canRead());
+            System.out.println("Is writable: " +file.canWrite());
+        }
+
+        else{
+            System.out.println("File not found!");
+        }
 
     }
 }
+
 

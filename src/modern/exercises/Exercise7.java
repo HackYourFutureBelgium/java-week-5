@@ -12,6 +12,17 @@ public class Exercise7
 {
     public static void main(String[] args)
     {
+        Product2 chocoEggs = new Product2("Chocolate eggs", 34d);
+        Product2 otherChocoEggs = new Product2("Chocolate eggs", 34d);
+        Product2 orientalDelices = new Product2("Oriental delices", 12d);
 
+        System.out.println(orientalDelices.name() + " " + orientalDelices.price());
+        System.out.println(chocoEggs.name() + " " + chocoEggs.price());
+        System.out.println(chocoEggs.toString());
+        System.out.println(orientalDelices.toString());
+        System.out.println(chocoEggs.equals(otherChocoEggs));
+        System.out.println(chocoEggs.equals(orientalDelices));
     }
 }
+
+record Product2(String name, double price){};

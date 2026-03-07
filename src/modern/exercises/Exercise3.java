@@ -10,6 +10,19 @@ public class Exercise3
 {
     public static void main(String[] args)
     {
+        // Instance of interface Printer.
+        Printer printer = new Printer(){
+
+            @Override
+            public void print(String text) {
+                System.out.println("Text: " + text);
+            }
+        };
+        printer.print("Hello World!");
 
     }
+}
+
+interface Printer{
+    void print(String text);
 }

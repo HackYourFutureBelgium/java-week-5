@@ -1,0 +1,66 @@
+/// Theory 1 -- Encapsulation vs Abstraction ///
+
+Explain the difference between:
+
+Encapsulation
+
+Abstraction
+
+### Hints:
+
+Encapsulation:
+
+Hiding internal data
+
+Controlling access using private fields and methods
+
+Abstraction:
+
+Hiding implementation details
+
+Showing only essential behavior through interfaces or abstract classes
+
+Give a simple Java example for both.
+
+// Encapsulation
+
+class Encapsulation{
+    private int integer;
+    private String name;
+    public Encapsulation(String name, int integer){
+        setInteger(integer);
+        setName(name);
+    }
+    // START METHOD
+    protected void protectedMethod(String mess){
+        System.out.println(mess);
+    }
+    // SETTER
+    public void setInteger(int integer) {
+        this.integer = integer;
+    }
+    public void setName(String name) {
+       this.name = name;
+    }
+    //GETTER
+    public int getInteger() {
+        return this.integer;
+    }
+    public String getName() {
+        return this.name;
+    }
+}
+
+// Abstraction
+
+abstract class NotificationService{
+
+protected String getMessage(String message){
+return message;}
+
+}
+
+class SMS extends NotificationService{
+
+}
+class Email extends NotificationService{}

@@ -1,0 +1,38 @@
+// Theory 3 -- protected Access Modifier //
+
+What does protected mean in Java?
+In Java, a protected field or method can be accessed by subclasses of the class and by other classes in the same package.
+
+Compare the following access levels:
+
+private
+In Java, a private field or method cannot be accessed from outside its class.
+protected
+In Java, a protected field or method can be accessed by subclasses of the class and by other classes in the same package.
+public
+In Java, a public field or method can be accessed by any class from any package.
+
+When would you choose protected instead of private?
+When we want ONLY a subclass or a package class to access or override a method / field.
+
+Give a small example involving inheritance.
+
+class Animal{
+    protected String sound = "noise";
+    private boolean fur = false;
+    public void  setFur(boolean hasFur){
+        this.fur = hasFur;
+    }
+    public boolean isFur(){
+        return  this.fur;
+    }
+}
+
+class Dog extends Animal{}
+
+////
+Dog zia = new Dog();
+System.out.println(zia.sound); // OK
+System.out.println(zia.fur); // Raise an error => java: fur has private access in live_coding.Animal
+zia.setFur(true); // OK
+System.out.println(zia.isFur()); // OK

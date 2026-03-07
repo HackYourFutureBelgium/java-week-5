@@ -10,6 +10,15 @@ public class Exercise2
 {
     public static void main(String[] args)
     {
+        System.out.println("Join => " + join("Once", "upon","a","time"));
 
     }
+    public static StringBuilder join(String... words){
+        StringBuilder result = new StringBuilder();
+        for(String str:words ){
+            result.append(str + " ");
+        }
+        return result;
+    }
+
 }

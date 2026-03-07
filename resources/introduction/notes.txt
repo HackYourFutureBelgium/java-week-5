@@ -1,0 +1,2 @@
+Java I/O is powerful.
+Streams make reading and writing easier.
