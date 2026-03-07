@@ -17,7 +17,16 @@ public class Exercise4
 {
 	public static void main(String[] args)
 	{
-		String filePath = "resources" + File.separator + "notes.txt";
+		String path = STR."\{Config.getIntroPath()}\{File.separator}notes.txt" ;
+		File file = new File(path);
+		try(FileWriter writer = new FileWriter(file, true)){
+			writer.write("Java I/O is powerful.\n");
+			writer.write("Streams make reading and writing easier.\n");
+			System.out.println("File written successfully!");
+		}
+		catch (IOException e){
+			System.out.println("Error " + e.getMessage());
+		}
 
 	}
 

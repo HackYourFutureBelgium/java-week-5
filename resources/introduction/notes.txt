@@ -1,6 +1,2 @@
 Java I/O is powerful.
 Streams make reading and writing easier.
-
-This is an overwrite.
-
-This is an overwrite.

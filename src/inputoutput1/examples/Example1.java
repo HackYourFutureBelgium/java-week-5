@@ -7,11 +7,12 @@
 package inputoutput1.examples;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Example1
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
         File file = new File("notes.txt");
 
         if (file.exists())
@@ -21,6 +22,15 @@ public class Example1
         else
         {
             System.out.println("File not found!");
+            try{
+                FileWriter writer = new FileWriter(file);
+                writer.write("Hello World!");
+
+            }
+            catch (IOException e){
+                System.out.println(e.getMessage());
+            }
+
         }
     }
 }
