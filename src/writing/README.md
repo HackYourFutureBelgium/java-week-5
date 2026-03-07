@@ -1,6 +1,6 @@
 # ✍️ Writing Files in Java
 
-Writing data to files is an essential part of many Java applications — from saving logs and reports to exporting results.
+Writing data to files is an essential part of many Java applications -- from saving logs and reports to exporting results.
 Java provides several convenient classes for writing **text data**, ensuring efficient and safe file operations.
 
 ---

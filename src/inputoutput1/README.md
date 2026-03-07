@@ -1,6 +1,6 @@
 # 🧩 Introduction to Java I/O (Input/Output)
 
-Java provides a rich set of **I/O (Input/Output)** classes to read and write data — whether it’s from files, keyboard input, or network connections.
+Java provides a rich set of **I/O (Input/Output)** classes to read and write data -- whether it’s from files, keyboard input, or network connections.
 
 Understanding how data flows in and out of a program is essential for building real-world backend systems that store, log, or process information.
 
@@ -11,7 +11,7 @@ Understanding how data flows in and out of a program is essential for building r
 **Input** → Data that comes **into** a program (e.g., reading from a file).
 **Output** → Data that goes **out** of a program (e.g., writing to a file or console).
 
-Every I/O operation involves a **stream** — a continuous flow of data between the program and a source/destination.
+Every I/O operation involves a **stream** -- a continuous flow of data between the program and a source/destination.
 
 ---
 
@@ -64,7 +64,7 @@ Forgetting to close them can cause **memory leaks** or **locked files**.
 
 ### - Recommended Practice: Try-With-Resources
 
-Introduced in Java 7, `try-with-resources` automatically closes the stream after the block finishes — even if an exception occurs.
+Introduced in Java 7, `try-with-resources` automatically closes the stream after the block finishes -- even if an exception occurs.
 
 ```java
 public class Main
@@ -83,7 +83,7 @@ public class Main
 }
 ```
 
-No need for `finally { reader.close(); }` — Java does it for you!
+No need for `finally { reader.close(); }` -- Java does it for you!
 
 ---
 

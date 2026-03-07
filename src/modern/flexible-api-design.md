@@ -11,7 +11,7 @@ More flexible behavior
 
 More readable object creation
 
-## Varargs — Flexible Method Parameters
+## Varargs -- Flexible Method Parameters
 What Problem Does It Solve?
 Question:
 Try to create a method that adds 3 given parameters, and then overload it for 4 parameters, and then 5.
@@ -111,7 +111,7 @@ Anonymous classes were widely used before Java 8.
 Later in the course we will learn **Lambda Expressions**, which provide a shorter syntax for many cases where anonymous classes were used.
 
 
-## Builder Pattern — Clean and Readable Object Creation
+## Builder Pattern -- Clean and Readable Object Creation
 What Problem Does It Solve?
 
 When constructors have too many parameters:

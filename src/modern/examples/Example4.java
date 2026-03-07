@@ -60,7 +60,7 @@ public class Example4
     public static void main(String[] args)
     {
         User user = new User.Builder()
-                .name("Bora")
+                .name("Student")
                 .age(35)
                 .active(true)
                 .build();

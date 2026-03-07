@@ -15,7 +15,7 @@ Scope for now:
 
 ## Day Plan (2 Days)
 
-### Day 1 — SQL Basics + Constraints
+### Day 1 -- SQL Basics + Constraints
 - What SQL is and where it is used
 - `CREATE TABLE`
 - `INSERT INTO`
@@ -24,7 +24,7 @@ Scope for now:
 - `UNIQUE`
 - `FOREIGN KEY` (intro)
 
-### Day 2 — Table Relationships + Roles
+### Day 2 -- Table Relationships + Roles
 - One-to-many and many-to-one
 - Many-to-many (with a junction table)
 - What a SQL Developer does

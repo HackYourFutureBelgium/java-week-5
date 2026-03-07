@@ -31,7 +31,7 @@ So multithreading is powerful… and easy to break if we are not careful.
 
 ## 3) Creating a thread (two common ways)
 
-### Option A: `Runnable` (recommended for beginners)
+### Option A: `Runnable`
 
 ```java
 public class DemoRunnable {
@@ -98,6 +98,7 @@ public class RaceConditionDemo {
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 100_000; i++) counter++;
+            // Separating numbers with _ is allowed and it increases readability.
         });
 
         Thread t2 = new Thread(() -> {

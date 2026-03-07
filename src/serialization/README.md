@@ -1,6 +1,6 @@
 # 🧠 Serialization & Deserialization in Java
 
-Serialization is a powerful Java mechanism that allows saving entire objects to files or sending them over networks — a fundamental
+Serialization is a powerful Java mechanism that allows saving entire objects to files or sending them over networks -- a fundamental
 concept for real-world applications like APIs, data persistence, and caching.
 
 ---
@@ -22,7 +22,7 @@ concept for real-world applications like APIs, data persistence, and caching.
 
 ### **2. What is Deserialization?**
 
-* **Deserialization** is the reverse process — it **reconstructs an object** from a saved byte stream.
+* **Deserialization** is the reverse process -- it **reconstructs an object** from a saved byte stream.
 * The object regains the same values for its fields as when it was serialized.
 
 📘 Think of it as “unfreezing” an object and bringing it back to life.
@@ -41,7 +41,7 @@ class Person implements Serializable
 }
 ```
 
-* The class must **implement `java.io.Serializable`** (a marker interface — no methods).
+* The class must **implement `java.io.Serializable`** (a marker interface -- no methods).
 * All fields inside the class must also be serializable.
 
 ---
